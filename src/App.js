@@ -4,13 +4,16 @@ import Header from './components/header/Header';
 import MainRoute from './router/MainRoute';
 // import gsapAnimation from './utils/gsapAnimation';
 import gsapSection from './utils/gsapSection';
+import lenis from './utils/lenis';
 import { useEffect } from 'react';
+
 
 function App() {
 
   useEffect(() => {
     // gsapAnimation();
     gsapSection();
+    lenis();
   },[]);
 
   return (
