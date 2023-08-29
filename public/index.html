@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="load">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" > -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="author" content="J45bongsik">
+    <meta name="description" content="안녕하세요. 조상원 포트폴리오 사이트 입니다.">
+    <meta name="keywords" content="조상원, J45bongsik, 퍼블리셔, 웹 퍼블리셔, FrontEnd">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+    <meta property="og:image" content="">
+    <meta property="og:title" content="J45 Portfolio">
+    <meta property="og:description" content="안녕하세요. 조상원 포트폴리오 사이트 입니다.">
+    <meta property="og:url" content="github.com/j45bongsik/j45">
+    <!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- 구글 검색결과 아이콘 및 파비콘 -->
+    <!-- <link rel="shortcut icon" href="../images/favicon.ico"> -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- AOS 터치아이콘 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/AOS-favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/AOS-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/AOS-favicon-96x96.png">
+
+    <!-- IOS 터치아이콘 -->
+    <link rel="apple-touch-icon" sizes="16x16" href="%PUBLIC_URL%/IOS-favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="%PUBLIC_URL%/IOS-favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="%PUBLIC_URL%/IOS-favicon-96x96.png">
+        
+    
+    
+    <title>J45 Portfolio</title>
   </head>
-  <body>
+  <body class="load">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
