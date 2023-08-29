@@ -6,7 +6,7 @@ export const LoadingStyle = {
         position: fixed; left: 0; top: 0;
         width: 100%; height: 100%;
         display: flex; justify-content: center; align-items: center;
-        z-index: 10;
+        z-index: 9999;
         background: #161c29;
         &.off {
             animation: fadeOut 1s ease 1s forwards;

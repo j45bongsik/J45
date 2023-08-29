@@ -9,4 +9,4 @@ GSAP : 3.12.2v<br />
 
 ## Portfolio Project J45
 
-<a href="https://j45.vercel.app/" target="_blank">Portfolio Project J45 사이트 바로가기</a>
+<a href="https://j45.vercel.app/" target="_blank">PORTFOLIO React 프로젝트 - 바로가기</a>
