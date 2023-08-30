@@ -23,6 +23,35 @@ const gsapSection = () => {
         ),
     });
 
+    const slides = document.querySelectorAll(".vrSection");
+
+    function initParallax() {
+        slides.forEach((slide, i) => {
+            let imageWrappers = slide.querySelectorAll(".vrSection > article");
+    
+            gsap.fromTo(
+            imageWrappers,
+            {
+                y: "-30vh",
+            },
+            {
+                y: "30vh",
+                scrollTrigger: {
+                trigger: slide,
+                scrub: true,
+                start: "top bottom", // position of trigger meets the scroller position
+                },
+                ease: "none",
+            }
+            );
+        });
+    }
+
+    function init() {
+        initParallax();
+    }
+    init();
+
     
 };
 

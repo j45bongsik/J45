@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { GnbStyle, SectionsStyle } from "../../styles/Sections";
 import { GNB_LIST, IMOJI_LIST } from "../../utils/commom"; 
 import { Link } from 'react-router-dom'
@@ -74,10 +74,10 @@ const SectionCont = {
 const Section02 = ((props) => {
 
     const imojiList = IMOJI_LIST()
-
+   
 
     return (
-        <SectionsStyle.SectionArea className="section02">
+        <SectionsStyle.SectionArea id="section02" className="section">
             <SectionCont.ContentArea>
                 <SectionCont.innerArea>
                     <SectionCont.flexArea>
@@ -88,7 +88,7 @@ const Section02 = ((props) => {
                                         
                                         return (
 
-                                            <SectionCont.txtItem key={id} className={"text0"+ id}>
+                                            <SectionCont.txtItem key={id} className="text">
                                                 <SectionCont.txtTag>
                                                     {text}
                                                 </SectionCont.txtTag>
@@ -107,7 +107,7 @@ const Section02 = ((props) => {
                                             imojiList[0].map(({id, alt, src, text},index) => {
                                                 return (
 
-                                                    <SectionCont.imojiItem key={id}>
+                                                    <SectionCont.imojiItem key={id} className={"imoji0" + id}>
                                                         <SectionCont.imojiTag src={src} alt={alt}>
 
                                                         </SectionCont.imojiTag>
