@@ -41,6 +41,108 @@ src: url(./notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-op
     src: url(./notoSans/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format("embedded-opentype"), url(./notoSans/woff/NotoSansKR-Bold-Hestia.woff) format("woff");
 }
 
+/* ---------------------------------- montserrat ---------------------------------- */
+
+@font-face {
+    font-family: 'Montserrat Thin';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./montsserrat/eot/Montserrat-Thin.eot);
+    src: url(./montsserrat/eot/Montserrat-Thin.eot?#iefix) format('embedded-opentype'), url(./montsserrat/woff2/Montserrat-Thin.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Thin.woff) format('woff'), url(./montsserrat/ttf/Montserrat-Thin.ttf) format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A;
+    // 영어만
+}
+
+@font-face {
+    font-family: 'Montserrat Ex Light';
+    font-style: normal;
+    font-weight: 200;
+    src: url(./montsserrat/eot/Montserrat-ExtraLight.eot);
+    src: url(./montsserrat/eot/Montserrat-ExtraLight.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-ExtraLight.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-ExtraLight.woff) format('woff'),url(./montsserrat/ttf/Montserrat-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./montsserrat/eot/Montserrat-Light.eot);
+    src: url(./montsserrat/eot/Montserrat-Light.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-Light.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Light.woff) format('woff'),url(./montsserrat/ttf/Montserrat-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url(./montsserrat/eot/Montserrat-Regular.eot);
+    src: url(./montsserrat/eot/Montserrat-Regular.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-Regular.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Regular.woff) format('woff'),url(./montsserrat/ttf/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-display: swap;
+    src: url(./montsserrat/eot/Montserrat-Medium.eot);
+    src: url(./montsserrat/eot/Montserrat-Medium.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-Medium.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Medium.woff) format('woff'),url(./montsserrat/ttf/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Semi Bold';
+    font-style: normal;
+    font-weight: 600;
+    src: url(./montsserrat/eot/Montserrat-SemiBold.eot);
+    src: url(./montsserrat/eot/Montserrat-SemiBold.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-SemiBold.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-SemiBold.woff) format('woff'),url(./montsserrat/ttf/Montserrat-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url(./montsserrat/eot/Montserrat-Bold.eot);
+    src: url(./montsserrat/eot/Montserrat-Bold.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-Bold.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Bold.woff) format('woff'),url(./montsserrat/ttf/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Ex Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url(./montsserrat/eot/Montserrat-ExtraBold.eot);
+    src: url(./montsserrat/eot/Montserrat-ExtraBold.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-ExtraBold.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-ExtraBold.woff) format('woff'),url(./montsserrat/ttf/Montserrat-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: 900;
+    src: url(./montsserrat/eot/Montserrat-Black.eot);
+    src: url(./montsserrat/eot/Montserrat-Black.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-Black.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-Black.woff) format('woff'),url(./montsserrat/ttf/Montserrat-Black.ttf) format('truetype');
+}
+
+/* ---------------------------------- neodunggeunmo ---------------------------------- */
+
+@font-face {
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: normal;
+
+    src: url(./neodunggeunmo/NeoDunggeunmoPro-Regular.woff2) format('woff2'),
+        url(./neodunggeunmo/NeoDunggeunmoPro-Regular.woff) format('woff'),url(./neodunggeunmo/NeoDunggeunmoPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 // font mixin
 @mixin fontInfo($family, $size) {
     font-family: $family; font-size: $size;

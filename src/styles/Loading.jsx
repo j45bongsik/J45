@@ -54,10 +54,11 @@ export const LoadingStyle = {
     titleArea:styled.article `
     `,
     titleH2:styled.h2 `
-        font-size: 3.4vw;
+        font-size: 4.5vw;
         color: #fff;
         font-weight: 700;
         text-align: center;
+        font-family: 'Montserrat Black';
     `,
     loadingTxt:styled.p `
         font-size: 5.5vw;
@@ -67,7 +68,9 @@ export const LoadingStyle = {
         color: #0000;
         background: linear-gradient(45deg,rgb(20,240,66) 26%,#b7ff00 100%);
         -webkit-background-clip: text;
-        filter: drop-shadow(0px 0px 26px rgba(183,255,0,.3019607843))
+        filter: drop-shadow(0px 0px 26px rgba(183,255,0,.3019607843));
+        font-family: 'Montserrat Black';
+        
     `
 
 

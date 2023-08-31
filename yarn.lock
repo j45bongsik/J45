@@ -9238,6 +9238,11 @@ spdy@^4.0.2:
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
 
+split-text@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/split-text/-/split-text-1.0.0.tgz#6e4d91011f93689dd2743170dccf415e66c411b0"
+  integrity sha512-uUKOFGpdt4/rrrBSmLugVbGmHaD7Ex4FcqIEXQRwlnxnDN+pL21Rx2lTgA3CSM8JE6EZPL4ZeEJp1ntzBsnc6Q==
+
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"

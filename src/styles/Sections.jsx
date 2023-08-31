@@ -45,73 +45,68 @@ export const SectionsStyle = {
     VrTextArea:styled.article `
         width: 100%; height: 100%;
         display: flex; flex-direction: column; justify-content: flex-end;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
     `,
     VrTitleArea:styled.article `
         color: #fff;
         display: flex; justify-content: flex-start; align-items: flex-end;
     `,
     TitleHead:styled.article `
-        font-size: 50px;
+        font-size: 32px;
         line-height: 1;
     `,
     TitleBody:styled.article `
+
+    `,
+    VrTag:styled.p `
         display: flex; justify-content: center; align-items: center;
         padding: 0px 5px;
-        margin-left: 10px;
-        margin-bottom: 30px;
         width: 100px; height: 30px;
-        background: #000;
+        /* background: #000; */
         color: #fff;
         text-align: center;
         border-radius: 3px;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         font-family: 'Noto sans Light';
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            margin-bottom: 18px;
-        }
-    `,
-    VrTag:styled.p `
-    
+        margin-left: -18px;
+        margin-bottom: -6px;
     `,
     VrTitle:styled.h3 `
-        font-family: 'Noto Sans Light';
+        font-family: 'Montserrat Thin','Noto Sans';
+        letter-spacing: -1px;
+        margin-top: 10px;
+        /* font-size: 16px; */
     `,
     VrTitleSub:styled.p `
+        display: flex; justify-content: flex-start; align-items: flex-end;
         font-family: 'Noto Sans Bold';
         font-size: 62px;
-        color: transparent;
-        -webkit-text-stroke: 1px #fff;
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            font-size: 50px;
-            color: #fff;
-        }
+        margin-top: 3px;
     `,
     VrDescArea:styled.article `
-    
+        margin-top: 20px;
+        color: #fff;
     `,
     VrDesc:styled.p `
     
     `,
     VrBtnArea:styled.div `
         display: flex; justify-content: flex-start; align-items: center;
+        margin-top: 30px;
         a {
             position: relative;
-            display: block; padding: 0px 10px; height: 30px;
+            display: block;height: 40px;
+            padding: 0px 20px;
             text-align: center;
-            line-height: 30px;
+            line-height: 40px;
             color: #fff;
-            &:after {
-                content: ''; position: absolute; left: 10px; bottom: 0;
-                width: 0px; height: 2px;
-                transition: 0.3s;
-                background: #fff;
-            }
+            border: 1px solid #fff;
+            border-radius: 2px;
+            transition: 0.3s;
             &:hover {
-                &:after {
-                    width: calc(100% - 20px);
-                }
+                background: #fff;
+                color: #000;
             }
         }
     `,

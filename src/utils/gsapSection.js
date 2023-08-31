@@ -6,6 +6,7 @@ import gsap from "gsap";
 const gsapSection = () => {
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
+    //section1 developer 배경
     ScrollTrigger.create({
         // 어디에 닿으면 반응할건지
         trigger: ".section02",
@@ -17,11 +18,13 @@ const gsapSection = () => {
                 
             },
             {
-                transform: "scale(4.0)",
+                transform: "scale(8.0)",
                 filter: "blur(6px)",
             }
         ),
     });
+
+
 
     const slides = document.querySelectorAll(".vrSection");
 

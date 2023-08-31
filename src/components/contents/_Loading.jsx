@@ -9,9 +9,11 @@ import run03 from '../../assets/images/run03.json';
 import run04 from '../../assets/images/run04.json';
 import run05 from '../../assets/images/run05.json';
 
+
 const Loading = () => {
     const [loading, setLoading] = useState(0);
     const aniAreaRef = useRef(null);
+    
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -89,7 +91,7 @@ const Loading = () => {
 
         tl.play();
     }, []);
-
+    
     return (
         <LoadingStyle.loadingArea className="loading active">
             <LoadingStyle.aniArea ref={aniAreaRef}>

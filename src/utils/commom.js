@@ -17,6 +17,94 @@ import vrBg10 from "../assets/images/bg_vr10.png";
 import vrBg11 from "../assets/images/bg_vr11.png";
 import vrBg12 from "../assets/images/bg_vr12.png";
 
+import vr01_Middle01 from "../assets/images/vr01_middle01.png";
+import vr01_Middle02 from "../assets/images/vr01_middle02.png";
+import vr01_Middle03 from "../assets/images/vr01_middle03.png";
+import vr02_Middle01 from "../assets/images/vr02_middle01.png";
+import vr02_Middle02 from "../assets/images/vr02_middle02.png";
+import vr02_Middle03 from "../assets/images/vr02_middle03.png";
+import vr03_Middle01 from "../assets/images/vr03_middle01.png";
+import vr03_Middle02 from "../assets/images/vr03_middle02.png";
+import vr03_Middle03 from "../assets/images/vr03_middle03.png";
+import vr04_Middle01 from "../assets/images/vr04_middle01.png";
+import vr04_Middle02 from "../assets/images/vr04_middle02.png";
+import vr04_Middle03 from "../assets/images/vr04_middle03.png";
+import vr05_Middle01 from "../assets/images/vr05_middle01.png";
+import vr05_Middle02 from "../assets/images/vr05_middle02.png";
+import vr05_Middle03 from "../assets/images/vr05_middle03.png";
+import vr06_Middle01 from "../assets/images/vr06_middle01.png";
+import vr06_Middle02 from "../assets/images/vr06_middle02.png";
+import vr06_Middle03 from "../assets/images/vr06_middle03.png";
+import vr07_Middle01 from "../assets/images/vr07_middle01.png";
+import vr07_Middle02 from "../assets/images/vr07_middle02.png";
+import vr07_Middle03 from "../assets/images/vr07_middle03.png";
+import vr08_Middle01 from "../assets/images/vr08_middle01.png";
+import vr08_Middle02 from "../assets/images/vr08_middle02.png";
+import vr08_Middle03 from "../assets/images/vr08_middle03.png";
+import vr09_Middle01 from "../assets/images/vr09_middle01.png";
+import vr09_Middle02 from "../assets/images/vr09_middle02.png";
+import vr09_Middle03 from "../assets/images/vr09_middle03.png";
+import vr10_Middle01 from "../assets/images/vr10_middle01.png";
+import vr10_Middle02 from "../assets/images/vr10_middle02.png";
+import vr10_Middle03 from "../assets/images/vr10_middle03.png";
+
+export const MID_LIST = () => {
+    let midList = [
+        {id: 0, src: vr01_Middle01, alt: "철도재산포털v.1 이미지 01"},
+        {id: 1, src: vr01_Middle02, alt: "철도재산포털v.1 이미지 02"},
+        {id: 2, src: vr01_Middle03, alt: "철도재산포털v.1 이미지 03"},
+        {id: 3, src: vr02_Middle01, alt: "KLIP헬프데스크 이미지 01"},
+        {id: 4, src: vr02_Middle02, alt: "KLIP헬프데스크 이미지 02"},
+        {id: 5, src: vr02_Middle03, alt: "KLIP헬프데스크 이미지 03"},
+        {id: 6, src: vr03_Middle01, alt: "LX통합플렛폼 이미지 01"},
+        {id: 7, src: vr03_Middle02, alt: "LX통합플렛폼 이미지 02"},
+        {id: 8, src: vr03_Middle03, alt: "LX통합플렛폼 이미지 03"},
+        {id: 9, src: vr04_Middle01, alt: "철도재산포털v.2 이미지 01"},
+        {id: 10, src: vr04_Middle02, alt: "철도재산포털v.2 이미지 02"},
+        {id: 11, src: vr04_Middle03, alt: "철도재산포털v.2 이미지 03"},
+        {id: 12, src: vr05_Middle01, alt: "EGIS 이미지 01"},
+        {id: 13, src: vr05_Middle02, alt: "EGIS 이미지 02"},
+        {id: 14, src: vr05_Middle03, alt: "EGIS 이미지 03"},
+        {id: 15, src: vr06_Middle01, alt: "현대오일뱅크 이미지 01"},
+        {id: 16, src: vr06_Middle02, alt: "현대오일뱅크 이미지 02"},
+        {id: 17, src: vr06_Middle03, alt: "현대오일뱅크 이미지 03"},
+        {id: 18, src: vr07_Middle01, alt: "KGEOP 이미지 01"},
+        {id: 19, src: vr07_Middle02, alt: "KGEOP 이미지 02"},
+        {id: 20, src: vr07_Middle03, alt: "KGEOP 이미지 03"},
+        {id: 21, src: vr08_Middle01, alt: "똑똑청년농부 이미지 01"},
+        {id: 22, src: vr08_Middle02, alt: "똑똑청년농부 이미지 02"},
+        {id: 23, src: vr08_Middle03, alt: "똑똑청년농부 이미지 03"},
+        {id: 24, src: vr09_Middle01, alt: "룰루메딕 이미지 01"},
+        {id: 25, src: vr09_Middle02, alt: "룰루메딕 이미지 02"},
+        {id: 26, src: vr09_Middle03, alt: "룰루메딕 이미지 03"},
+        {id: 27, src: vr10_Middle01, alt: "워크트로닉스 이미지 01"},
+        {id: 28, src: vr10_Middle02, alt: "워크트로닉스 이미지 02"},
+        {id: 29, src: vr10_Middle03, alt: "워크트로닉스 이미지 03"},
+    ]
+    
+    return [midList]
+}
+
+
+export const TAG_LIST = () => {
+    let tagList = [
+        {id: 0, tag: "SEO"},
+        {id: 1, tag: "W.A"},
+        {id: 2, tag: "HTML5"},
+        {id: 3, tag: "CSS3"},
+        {id: 4, tag: "JavaScript"},
+        {id: 5, tag: "jQuery"},
+        {id: 6, tag: "SCSS"},
+        {id: 7, tag: "Gulp"},
+        {id: 8, tag: "Figma"},
+        {id: 9, tag: "Zeplin"},
+        {id: 10, tag: "XD"},
+        {id: 11, tag: "React.js"},
+    ]
+
+    return [tagList]
+}
+
 export const VR_LIST = () => {
     let vrList = [
         {id: 0, alt: "포트폴리오01", src: vrBg01, title: "KR철도v.1", subtitle: "WEBSITE(반응형)", desc: "철도재산 대민 웹사이트 퍼블리싱 구축", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/01_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8(%ED%8F%90%EA%B8%B0)/kr/build/html/00_coding_list.html"},

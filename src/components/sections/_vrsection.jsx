@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GnbStyle, SectionsStyle } from "../../styles/Sections";
-import { GNB_LIST, IMOJI_LIST, VR_LIST } from "../../utils/commom"; 
+import { GNB_LIST, IMOJI_LIST, VR_LIST, MID_LIST } from "../../utils/commom"; 
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -39,15 +39,14 @@ const VrSection = ((props) => {
 
     
     const [vrList] = VR_LIST();
+    const [midList] = MID_LIST();
     
 
     return (
         <>
-
         {
             vrList.map(({id, alt, src, title, subtitle, desc, frac, skill, link},index) => {
                 return (
-                    
                     <SectionsStyle.VrSection key={id} className="vrSection">
                         
 
@@ -55,20 +54,18 @@ const VrSection = ((props) => {
                                 <SectionsStyle.VrInner>
                                     <SectionsStyle.VrTextArea>
                                         <SectionsStyle.VrTitleArea>
-
                                             <SectionsStyle.TitleHead>
+                                                
                                                 <SectionsStyle.VrTitle>
                                                     {subtitle}
                                                 </SectionsStyle.VrTitle>
                                                 <SectionsStyle.VrTitleSub>
                                                     {title}
+                                                    <SectionsStyle.VrTag>
+                                                        {skill}
+                                                    </SectionsStyle.VrTag>
                                                 </SectionsStyle.VrTitleSub>
                                             </SectionsStyle.TitleHead>
-                                            <SectionsStyle.TitleBody>
-                                                <SectionsStyle.VrTag>
-                                                    {skill}
-                                                </SectionsStyle.VrTag>
-                                            </SectionsStyle.TitleBody>
                                         </SectionsStyle.VrTitleArea>
 
                                         <SectionsStyle.VrDescArea>
@@ -79,7 +76,18 @@ const VrSection = ((props) => {
                                         <SectionsStyle.VrBtnArea>
                                             <Link to={link} target="_blank" rel="noopener noreferrer" alt={title + " 새창으로 열기"}>바로가기</Link>
                                         </SectionsStyle.VrBtnArea>
+                                        
                                     </SectionsStyle.VrTextArea>
+
+                                    <SectionsStyle.VrImageArea>
+                                        <SectionsStyle.VrPoligon>
+                                            <SectionsStyle.VrPoliImg>
+                                                
+                                            </SectionsStyle.VrPoliImg>
+                                        </SectionsStyle.VrPoligon>
+                                    </SectionsStyle.VrImageArea>
+
+                                    
                                 </SectionsStyle.VrInner>  
                                 <SectionsStyle.SectionBg src={src} alt={alt} className={"vrBg" + (id+3)}></SectionsStyle.SectionBg>
                                 <SectionsStyle.SectionBgDimm></SectionsStyle.SectionBgDimm>      
@@ -89,6 +97,7 @@ const VrSection = ((props) => {
                 )
             })
         }
+        
         </>
 
     );
