@@ -10,7 +10,7 @@ const gsapSection = () => {
     //section1 developer 배경
     ScrollTrigger.create({
         // 어디에 닿으면 반응할건지
-        trigger: ".section02",
+        trigger: "#section2",
         scrub: 1,
         // 어디다가 적용할건지
         animation: gsap.fromTo(
@@ -55,17 +55,14 @@ const gsapSection = () => {
     }
     init();
 
-    // Get all .vrSection elements
     const vrSections = document.querySelectorAll('.vrSection');
 
-    // Loop through the .vrSection elements with odd indices
     vrSections.forEach((vrSection, index) => {
             const img1 = vrSection.querySelector('.poligon:nth-child(1) > img');
             const img2 = vrSection.querySelector('.poligon:nth-child(2) > img');
             const img3 = vrSection.querySelector('.poligon:nth-child(3) > img');
         if (index % 2 === 0) {
             
-
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
@@ -193,75 +190,20 @@ const gsapSection = () => {
             });
         }
     });
-    // // vrSection1
-    // ScrollTrigger.create({
-    //     trigger: ".vrSection1",
-    //     scrub: 1,
-    //     start: "center 100%",
-    //     end: "center 50%",
-    //     animation: gsap.fromTo(
-    //     ".vrSection1 .poligon:nth-child(1) > img",
-    //         {
-    //             x: "150%",
-    //             y: "0%",
-    //             backgroundSize: 0,
-    //             scale: 1,
-    //         },
-    //         {
-    //             x: "-10%",
-    //             y: "0%",
-    //             scale: 1.2,
-    //         }
-    //     ),
-    // });
-    
-    // ScrollTrigger.create({
-    //     trigger: ".vrSection1",
-    //     scrub: 1,
-    //     start: "center 75%",
-    //     end: "center 25%",
-    //     animation: gsap.fromTo(
-    //     ".vrSection1 .poligon:nth-child(2) > img",
-    //         {
-    //             x: "150%",
-    //             y: "0%",
-    //             backgroundSize: 0,
-    //             scale: 1,
-    //         },
-    //         {
-    //             x: "0%",
-    //             y: "0%",
-    //             // ease: Linear.easeNone,
-    //             scale: 1.2,
-    //             // objectFit: none,
-    //         }
-    //     ),
-    // });
-    
-    // ScrollTrigger.create({
-    //     trigger: ".vrSection1",
-    //     scrub: 1,
-    //     start: "center 50%",
-    //     end: "center 0%",
-    //     animation: gsap.fromTo(
-    //     ".vrSection1 .poligon:nth-child(3) > img",
-    //         {
-    //             x: "150%",
-    //             y: "0%",
-    //             backgroundSize: 0,
-    //             scale: 1,
-    //         },
-    //         {
-    //             x: "10%",
-    //             y: "0%",
-    //             // ease: Linear.easeNone,
-    //             scale: 1.2,
-    //             // objectFit: none,
-    //         }
-    //     ),
-    // });
-    
-    
+
+    let sections4 = gsap.utils.toArray(".panel");
+    gsap.to(sections4, {
+        xPercent: -100 * (sections4.length - 1),
+        ease: "none",
+        // duration: 122.5,
+        scrollTrigger: {
+        trigger: "#section4",
+        // markers: true,
+        pin: true,
+        scrub: 1,
+        end: "+=7000",
+        },
+    });
 
     
 };

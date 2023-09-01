@@ -6,8 +6,14 @@ import '../assets/fonts/_Fonts.scss';
 export const SectionsStyle = {
 
     SectionArea:styled.section `
-        width: 100%; height: 100vh;
+        width: 100%; 
         overflow: hidden;
+        &#section3 {
+            overflow: visible;
+        }
+        &:not(#section3) {
+            height: 100vh;
+        }
     `,
     // Sectioninner:styled.article `
     //     width: 100%; max-width: 1440px; height: 100%;

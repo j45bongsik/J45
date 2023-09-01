@@ -59,14 +59,13 @@ const SectionCont = {
 
 
 
-const VrSection = ((props) => {
-
+const Section03 = ((props) => {
 
     const [vrList] = VR_LIST();
     
-
     return (
         <>
+        <SectionsStyle.SectionArea id="section3" className="section">
         {
             vrList.map(({ id, alt, src, title, subtitle, desc, skill, link, midSrc, midAlt }, index) => {
                 const sectionNumber = index + 1;
@@ -126,11 +125,11 @@ const VrSection = ((props) => {
 
             })
         }
-
+        </SectionsStyle.SectionArea>
         
         </>
 
     );
 })
 
-export default VrSection;
+export default Section03;

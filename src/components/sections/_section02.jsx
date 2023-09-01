@@ -77,7 +77,7 @@ const Section02 = ((props) => {
    
 
     return (
-        <SectionsStyle.SectionArea id="section02" className="section">
+        <SectionsStyle.SectionArea id="section2" className="section">
             <SectionCont.ContentArea>
                 <SectionCont.innerArea>
                     <SectionCont.flexArea>

@@ -48,42 +48,20 @@ import vr10_Middle01 from "../assets/images/vr10_middle01.png";
 import vr10_Middle02 from "../assets/images/vr10_middle02.png";
 import vr10_Middle03 from "../assets/images/vr10_middle03.png";
 
-// export const MID_LIST = () => {
-//     let midList = [
-//         {id: 0, src: vr01_Middle01, alt: "철도재산포털v.1 이미지 01"},
-//         {id: 1, src: vr01_Middle02, alt: "철도재산포털v.1 이미지 02"},
-//         {id: 2, src: vr01_Middle03, alt: "철도재산포털v.1 이미지 03"},
-//         {id: 3, src: vr02_Middle01, alt: "KLIP헬프데스크 이미지 01"},
-//         {id: 4, src: vr02_Middle02, alt: "KLIP헬프데스크 이미지 02"},
-//         {id: 5, src: vr02_Middle03, alt: "KLIP헬프데스크 이미지 03"},
-//         {id: 6, src: vr03_Middle01, alt: "LX통합플렛폼 이미지 01"},
-//         {id: 7, src: vr03_Middle02, alt: "LX통합플렛폼 이미지 02"},
-//         {id: 8, src: vr03_Middle03, alt: "LX통합플렛폼 이미지 03"},
-//         {id: 9, src: vr04_Middle01, alt: "철도재산포털v.2 이미지 01"},
-//         {id: 10, src: vr04_Middle02, alt: "철도재산포털v.2 이미지 02"},
-//         {id: 11, src: vr04_Middle03, alt: "철도재산포털v.2 이미지 03"},
-//         {id: 12, src: vr05_Middle01, alt: "EGIS 이미지 01"},
-//         {id: 13, src: vr05_Middle02, alt: "EGIS 이미지 02"},
-//         {id: 14, src: vr05_Middle03, alt: "EGIS 이미지 03"},
-//         {id: 15, src: vr06_Middle01, alt: "현대오일뱅크 이미지 01"},
-//         {id: 16, src: vr06_Middle02, alt: "현대오일뱅크 이미지 02"},
-//         {id: 17, src: vr06_Middle03, alt: "현대오일뱅크 이미지 03"},
-//         {id: 18, src: vr07_Middle01, alt: "KGEOP 이미지 01"},
-//         {id: 19, src: vr07_Middle02, alt: "KGEOP 이미지 02"},
-//         {id: 20, src: vr07_Middle03, alt: "KGEOP 이미지 03"},
-//         {id: 21, src: vr08_Middle01, alt: "똑똑청년농부 이미지 01"},
-//         {id: 22, src: vr08_Middle02, alt: "똑똑청년농부 이미지 02"},
-//         {id: 23, src: vr08_Middle03, alt: "똑똑청년농부 이미지 03"},
-//         {id: 24, src: vr09_Middle01, alt: "룰루메딕 이미지 01"},
-//         {id: 25, src: vr09_Middle02, alt: "룰루메딕 이미지 02"},
-//         {id: 26, src: vr09_Middle03, alt: "룰루메딕 이미지 03"},
-//         {id: 27, src: vr10_Middle01, alt: "워크트로닉스 이미지 01"},
-//         {id: 28, src: vr10_Middle02, alt: "워크트로닉스 이미지 02"},
-//         {id: 29, src: vr10_Middle03, alt: "워크트로닉스 이미지 03"},
-//     ]
-    
-//     return [midList]
-// }
+
+export const REF_LIST = () => {
+    let refList = [
+        {id: 0, title: "PORTFOLIO v.7", desc: "slick, onePageScroll, anime 인터렉션을 사용해 작성했으며 챗봇을 통한 실시간 채팅이 가능합니다. naver analytics와 google analytics가 심어진 반응형 사이트 입니다.", src: "http://dnrlekzz.dothome.co.kr/pfv7/front/index/index02.html"},
+        {id: 1, title: "PORTFOLIO v.6", desc: "유튜브 레이아웃을 참고해 glassmorphism 인터렉션을 추가해 작성했으며 google analytics가 심어진 반응형 사이트 입니다.", src: "http://j46.dothome.co.kr/pfv6/front/main.html"},
+        {id: 2, title: "PORTFOLIO v.5", desc: "카카오 레이아웃을 참고해 video를 활용하였으며 google analytics가 심어진 반응형 사이트 입니다.", src: "http://dnrlekzz.dothome.co.kr/pfv5/front/main.html"},
+        {id: 3, title: "PORTFOLIO v.4", desc: "캐롯 레이아웃을 참고해 Masonry 라이브러리를 사용해 작성한 반응형 사이트 입니다.", src: "http://j46.dothome.co.kr/pfv4/front/main.html"},
+        {id: 4, title: "PUBLISHING GUIDE", desc: "인턴 기간중 작성한 퍼블리싱 가이드 사이트 입니다. 다양한 용도로 활용할수 있는 마크업과 규칙, 웹접근성 등 다양한 정보가 있습니다.", src: "http://j45.dothome.co.kr/pub_guide/convention/intro.html"},
+        {id: 5, title: "기업 홈페이지 고도화", desc: "인턴 기간중 참여한 리뉴얼 및 고도화 작업으로 퍼블리싱을 담당 했습니다.", src: null},
+        {id: 6, title: "예제 템플릿", desc: "다양한 매체를 통해 업무 시 페이지를 작성하는데 활용될만한 인터렉티브한 내용들을 작성하고 있습니다.", src: "http://dnrlekzz.dothome.co.kr/ex_library/front/index.html"},
+    ]
+
+    return [refList]
+}
 
 
 export const TAG_LIST = () => {
@@ -180,17 +158,17 @@ export const GNB_LIST = () => {
         {
             id: 0,
             name: 'gnb00',
-            link: '#section0',
+            link: '#section1',
         },
         {
             id: 1,
             name: 'gnb01',
-            link: '#section1',
+            link: '#section2',
         },
         {
             id: 2,
             name: 'gnb02',
-            link: '#section2',
+            link: '#section3',
         },
         {
             id: 3,
@@ -205,7 +183,7 @@ export const GNB_LIST = () => {
         {
             id: 5,
             name: 'gnb05',
-            link: '#section5',
+            link: '#section6',
         },
     ]
 

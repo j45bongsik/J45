@@ -7,6 +7,16 @@ const Gnb = ((props) => {
 
     const [gnbList] = GNB_LIST();
 
+    const scrollToSection = (sectionId) => {
+        const targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
         <GnbStyle.GnbArea>
             <GnbStyle.GnbList>
@@ -14,7 +24,7 @@ const Gnb = ((props) => {
                     gnbList.map(({link, name, id }, index) => {
                         return (
                             <GnbStyle.GnbItem key={id} >
-                                <Link to={link}>{name}</Link>
+                                <Link to={link} onClick={() => scrollToSection(id)}>{name}</Link>
                                 {/* <a href={link} alt={name}>{name}</a> */}
                             </GnbStyle.GnbItem>
                         )

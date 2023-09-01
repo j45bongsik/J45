@@ -150,7 +150,7 @@ const Section01 = ((props) => {
 
 
     return (
-        <SectionsStyle.SectionArea className="section01">
+        <SectionsStyle.SectionArea id="section1" className="section">
             <SectionCont.ContentArea>
                 {/* <SectionCont.innerArea> */}
                     <SectionCont.BgArea className="developer">

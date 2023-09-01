@@ -24,6 +24,29 @@ const HeaderStyle = {
 };
 
 const Header = () => {
+
+    useEffect(() => {
+        document.querySelectorAll('#header nav a').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetBox = link.getAttribute('href');
+            const targetElement = document.querySelector(targetBox);
+    
+            if (targetElement) {
+              const targetBoxOffset = targetElement.getBoundingClientRect().top + window.scrollY - 50;
+    
+              window.scrollTo({
+                top: targetBoxOffset,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      }, []);
+
+    
+
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
