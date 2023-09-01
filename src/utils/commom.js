@@ -107,7 +107,10 @@ export const TAG_LIST = () => {
 
 export const VR_LIST = () => {
     let vrList = [
-        {id: 0, alt: "포트폴리오01", src: vrBg01, title: "KR철도v.1", subtitle: "WEBSITE(반응형)", desc: "철도재산 대민 웹사이트 퍼블리싱 구축", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/01_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8(%ED%8F%90%EA%B8%B0)/kr/build/html/00_coding_list.html"},
+        {id: 0, alt: "포트폴리오01", src: vrBg01, title: "KR철도v.1", subtitle: "WEBSITE(반응형)", desc: "철도재산 대민 웹사이트 퍼블리싱 구축", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/01_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8(%ED%8F%90%EA%B8%B0)/kr/build/html/00_coding_list.html",
+            midSrc: [vr01_Middle01, vr01_Middle02, vr01_Middle03],
+            midAlt: ["KR철도 이미지01","KR철도 이미지02","KR철도 이미지03"]
+        },
         {id: 1, alt: "포트폴리오02", src: vrBg02, title: "KLIP헬프데스크", subtitle: "WEBSITE", desc: "KLIP헬프데스크 포털사이트 운영(고도화) 퍼블리싱", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/02_KLIP%ED%97%AC%ED%94%84%EB%8D%B0%EC%8A%A4%ED%81%AC/KLIP%ED%97%AC%ED%94%84%EB%8D%B0%EC%8A%A4%ED%81%AC/build/html/00_coding_list.html"},
         {id: 2, alt: "포트폴리오03", src: vrBg03, title: "LX통합플랫폼", subtitle: "WEBSITE", desc: "LX통합 플랫폼 관리자 및 사용자 사이트 퍼블리싱", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/03_LX%ED%86%B5%ED%95%A9%ED%94%8C%EB%9E%AB%ED%8F%BC/LX%ED%86%B5%ED%95%A9%ED%94%8C%EB%9E%AB%ED%8F%BC/%EA%B4%80%EB%A6%AC%EC%9E%90N/lx/build/html/00_coding_list.html"},
         {id: 3, alt: "포트폴리오04", src: vrBg04, title: "KR철도v.2", subtitle: "WEBSITE(반응형)", desc: "철도재산 대민 웹사이트 퍼블리싱 구축", frac: "공공기관", skill: "Publishing", link: "https://j45bongsik.github.io/ifcom/05_%EC%B2%A0%EB%8F%84%EC%9E%AC%EC%82%B0%ED%8F%AC%ED%84%B8/kr-potal/build/html/00_coding_list.html"},

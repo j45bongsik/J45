@@ -38,6 +38,13 @@ const SectionCont = {
 const VrSection = ((props) => {
 
     
+    
+
+
+
+
+
+    
     const [vrList] = VR_LIST();
     const [midList] = MID_LIST();
     
@@ -79,13 +86,22 @@ const VrSection = ((props) => {
                                         
                                     </SectionsStyle.VrTextArea>
 
-                                    <SectionsStyle.VrImageArea>
-                                        <SectionsStyle.VrPoligon>
-                                            <SectionsStyle.VrPoliImg>
-                                                
-                                            </SectionsStyle.VrPoliImg>
-                                        </SectionsStyle.VrPoligon>
-                                    </SectionsStyle.VrImageArea>
+
+                                    
+                                    {
+                                        midList.map(({id, src, alt}) => {
+                                            return (
+                                                // <SectionsStyle.VrImageArea>
+                                                //     <SectionsStyle.VrPoligon>
+                                                //         <SectionsStyle.VrPoliImg key={id} src={src} alt={alt}></SectionsStyle.VrPoliImg>
+                                                //     </SectionsStyle.VrPoligon>
+                                                // </SectionsStyle.VrImageArea>
+                                                <img key={id} src={src} alt={alt}></img>
+                                            )
+
+                                        })
+                                    }
+
 
                                     
                                 </SectionsStyle.VrInner>  
@@ -95,8 +111,10 @@ const VrSection = ((props) => {
                         
                     </SectionsStyle.VrSection>
                 )
+
             })
         }
+
         
         </>
 
