@@ -37,15 +37,17 @@ export const SectionsStyle = {
     VrInner:styled.div `
         width: 100%; max-width: 1440px; height: 100%;
         margin: 0px auto;
+        display: flex; justify-content: center; align-items: center;
     `,
     VrCont:styled.article `
         display: flex; justify-content: space-between; align-items: center;
         width: 100%; height: 100%;
     `,
     VrTextArea:styled.article `
-        width: 100%; height: 100%;
+        flex: 1%; height: 100%;
         display: flex; flex-direction: column; justify-content: flex-end;
         padding-bottom: 200px;
+        z-index: 4;
     `,
     VrTitleArea:styled.article `
         color: #fff;
@@ -119,5 +121,6 @@ export const SectionsStyle = {
         img {
             object-fit: cover;
         }
-    `
+    `,
+    
 }

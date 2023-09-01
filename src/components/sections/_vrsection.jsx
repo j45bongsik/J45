@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GnbStyle, SectionsStyle } from "../../styles/Sections";
-import { GNB_LIST, IMOJI_LIST, VR_LIST, MID_LIST } from "../../utils/commom"; 
+import { GNB_LIST, IMOJI_LIST, VR_LIST } from "../../utils/commom"; 
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -30,31 +30,49 @@ const SectionCont = {
         width: 100%; max-width: 1440px; height: 100%;
         margin: 0px auto;
     `,
-    
+    VrImageArea:styled.article `
+        flex: 1; 
+        height: 100%;
+        position: relative;
+    `,
+    VrPoligon:styled.div `
+        height: 100%;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        &:nth-child(1) {
+            z-index: 1;
+        }
+        &:nth-child(2) {
+            z-index: 2;
+        }
+        &:nth-child(3) {
+            z-index: 3;
+        }
+    `,
+    VrPoliImg:styled.img `
+        object-fit: cover;
+        height: 100%;
+        clip-path: polygon(73% 0, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    `,
 };
 
 
 
 const VrSection = ((props) => {
 
-    
-    
 
-
-
-
-
-    
     const [vrList] = VR_LIST();
-    const [midList] = MID_LIST();
     
 
     return (
         <>
         {
-            vrList.map(({id, alt, src, title, subtitle, desc, frac, skill, link},index) => {
+            vrList.map(({ id, alt, src, title, subtitle, desc, skill, link, midSrc, midAlt }, index) => {
+                const sectionNumber = index + 1;
+
                 return (
-                    <SectionsStyle.VrSection key={id} className="vrSection">
+                    <SectionsStyle.VrSection key={id} className={`vrSection vrSection${sectionNumber}`}>
                         
 
                             <SectionsStyle.VrCont>
@@ -86,29 +104,23 @@ const VrSection = ((props) => {
                                         
                                     </SectionsStyle.VrTextArea>
 
-
-                                    
-                                    {
-                                        midList.map(({id, src, alt}) => {
-                                            return (
-                                                // <SectionsStyle.VrImageArea>
-                                                //     <SectionsStyle.VrPoligon>
-                                                //         <SectionsStyle.VrPoliImg key={id} src={src} alt={alt}></SectionsStyle.VrPoliImg>
-                                                //     </SectionsStyle.VrPoligon>
-                                                // </SectionsStyle.VrImageArea>
-                                                <img key={id} src={src} alt={alt}></img>
-                                            )
-
-                                        })
-                                    }
-
+                                    <SectionCont.VrImageArea>
+                                        {
+                                            midSrc.map((map02, index) => {
+                                                return (
+                                                    <SectionCont.VrPoligon key={map02} className="poligon">
+                                                        <SectionCont.VrPoliImg src={midSrc[index]} alt={midAlt[index]}></SectionCont.VrPoliImg>
+                                                    </SectionCont.VrPoligon>
+                                                )
+                                            })
+                                        }
+                                    </SectionCont.VrImageArea>
 
                                     
                                 </SectionsStyle.VrInner>  
                                 <SectionsStyle.SectionBg src={src} alt={alt} className={"vrBg" + (id+3)}></SectionsStyle.SectionBg>
                                 <SectionsStyle.SectionBgDimm></SectionsStyle.SectionBgDimm>      
                             </SectionsStyle.VrCont>
-                        
                     </SectionsStyle.VrSection>
                 )
 
