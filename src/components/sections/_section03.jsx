@@ -104,7 +104,7 @@ const Section03 = ((props) => {
                                     </SectionsStyle.VrTextArea>
 
                                     <SectionCont.VrImageArea>
-                                        {
+                                        {/* {
                                             midSrc.map((map02, index) => {
                                                 return (
                                                     <SectionCont.VrPoligon key={map02} className="poligon">
@@ -112,7 +112,10 @@ const Section03 = ((props) => {
                                                     </SectionCont.VrPoligon>
                                                 )
                                             })
-                                        }
+                                        } */}
+                                        <SectionCont.VrPoligon className="poligon">
+                                            <SectionCont.VrPoliImg src={midSrc} alt={midAlt}></SectionCont.VrPoliImg>
+                                        </SectionCont.VrPoligon>
                                     </SectionCont.VrImageArea>
 
                                     

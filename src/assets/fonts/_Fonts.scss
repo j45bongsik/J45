@@ -41,6 +41,16 @@ src: url(./notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-op
     src: url(./notoSans/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format("embedded-opentype"), url(./notoSans/woff/NotoSansKR-Bold-Hestia.woff) format("woff");
 }
 
+@font-face {
+    font-family: 'Noto Sans Bold Only Ko';
+    font-style: normal;
+    font-weight: 700;
+    src: url(./notoSans/eot/NotoSansKR-Bold-Hestia.eot);
+    src: url(./notoSans/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format("embedded-opentype"), url(./notoSans/woff/NotoSansKR-Bold-Hestia.woff) format("woff");
+    unicode-range: U+AC00-D7A3;
+}
+
+
 /* ---------------------------------- montserrat ---------------------------------- */
 
 @font-face {
@@ -118,6 +128,16 @@ src: url(./notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-op
 }
 
 @font-face {
+    font-family: 'Montserrat Ex Bold Only Not Ko';
+    font-style: normal;
+    font-weight: bold;
+    src: url(./montsserrat/eot/Montserrat-ExtraBold.eot);
+    src: url(./montsserrat/eot/Montserrat-ExtraBold.eot?#iefix) format('embedded-opentype'),url(./montsserrat/woff2/Montserrat-ExtraBold.woff2) format('woff2'),
+        url(./montsserrat/woff/Montserrat-ExtraBold.woff) format('woff'),url(./montsserrat/ttf/Montserrat-ExtraBold.ttf) format('truetype');
+        unicode-range: U+0041-005A, U+0061-007A, U+0030-0039,U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+
+@font-face {
     font-family: 'Montserrat Black';
     font-style: normal;
     font-weight: 900;
@@ -129,7 +149,7 @@ src: url(./notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-op
 /* ---------------------------------- neodunggeunmo ---------------------------------- */
 
 @font-face {
-    font-family: 'Montserrat Black';
+    font-family: 'NeoDunggeunmoPro-Regular';
     font-style: normal;
     font-weight: normal;
 
@@ -137,12 +157,6 @@ src: url(./notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-op
         url(./neodunggeunmo/NeoDunggeunmoPro-Regular.woff) format('woff'),url(./neodunggeunmo/NeoDunggeunmoPro-Regular.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: 'NeoDunggeunmoPro-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 // font mixin
 @mixin fontInfo($family, $size) {
     font-family: $family; font-size: $size;

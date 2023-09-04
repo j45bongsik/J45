@@ -8,21 +8,33 @@ export const SectionsStyle = {
     SectionArea:styled.section `
         width: 100%; 
         overflow: hidden;
+        &#section1, &#section2, &#section5 {
+            height: 100vh;
+        }
+        &#section2 {
+            /* transform: translate(0px, 0px) !important; */
+        }
         &#section3 {
             overflow: visible;
         }
-        &:not(#section3) {
+        &#section4 {
             height: 100vh;
+            transform: translate(0px, 0px) !important;
         }
     `,
-    // Sectioninner:styled.article `
-    //     width: 100%; max-width: 1440px; height: 100%;
-    //     margin: 0px auto;
-    // `,
     VrSection:styled.section `
         width: 100%; height: 100vh;
         overflow: hidden;
         position: relative;
+        &:last-child {
+            &:after {
+                content: ''; position: absolute;
+                background: linear-gradient(0deg,#ededf4 30%,rgba(237,237,244,0) 50%);
+                bottom: 0;
+                height: 26.5vw;
+                width: 100%;
+            }
+        }
     `,
     SectionBg:styled.img `
         position: absolute;

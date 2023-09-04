@@ -13,7 +13,7 @@ const HeaderStyle = {
         width: 100%; height: 100px;
         transition: all 0.5s;
         background: rgba(0,0,0,0.4);
-        z-index: 4;
+        z-index: 50;
     `,
     Inner: styled.article`
         width: 100%; max-width: 1440px;

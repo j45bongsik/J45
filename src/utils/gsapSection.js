@@ -25,7 +25,6 @@ const gsapSection = () => {
         ),
     });
 
-
     const slides = document.querySelectorAll(".vrSection");
 
     function initParallax() {
@@ -66,24 +65,23 @@ const gsapSection = () => {
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
-                start: 'center 100%',
-                end: 'center 50%',
                 animation: gsap.fromTo(
                     img1,
                     {
-                        x: '150%',
+                        x: '50%',
                         y: '0%',
                         backgroundSize: 0,
                         scale: 1,
                     },
                     {
-                        x: '-10%',
+                        x: '20%',
                         y: '0%',
                         scale: 1.2,
                     }
                 ),
             });
 
+            //사용않함
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
@@ -104,7 +102,7 @@ const gsapSection = () => {
                     }
                 ),
             });
-
+            //사용않함
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
@@ -129,24 +127,23 @@ const gsapSection = () => {
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
-                start: 'center 100%',
-                end: 'center 50%',
                 animation: gsap.fromTo(
                     img1,
                     {
-                        x: '-500%',
+                        x: '-30%',
                         y: '0%',
                         backgroundSize: 0,
                         scale: 1,
                     },
                     {
-                        x: '10%',
+                        x: '-10%',
                         y: '0%',
                         scale: 1.2,
                     }
                 ),
             });
 
+            //사용않함
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
@@ -167,7 +164,7 @@ const gsapSection = () => {
                     }
                 ),
             });
-
+            //사용않함
             ScrollTrigger.create({
                 trigger: vrSection,
                 scrub: 1,
@@ -198,12 +195,34 @@ const gsapSection = () => {
         // duration: 122.5,
         scrollTrigger: {
         trigger: "#section4",
-        // markers: true,
         pin: true,
         scrub: 1,
-        end: "+=7000",
+        end: "+=11000",
         },
     });
+
+    //section4 developer02 배경
+    ScrollTrigger.create({
+        // 어디에 닿으면 반응할건지
+        scrub: 1,
+        // 어디다가 적용할건지
+        animation: gsap.fromTo(
+            ".developer02",
+            {
+                rotate: "-100",
+                x: "-5000",
+                y: "2500",
+              },
+              {
+                rotate: "+=150",
+                x: "3000",
+                y: "-1000",
+              }
+        ),
+    });
+    
+
+      
 
     
 };
